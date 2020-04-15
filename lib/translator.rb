@@ -14,6 +14,8 @@ def load_library(filepath)
   libHash
 end
 
+puts load_library("lib/emoticons.yml")
+
 def get_japanese_emoticon
   # code goes here
 end
