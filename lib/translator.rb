@@ -23,5 +23,5 @@ end
 
 def get_english_meaning(lib_path, emot)
   # code goes here
-  
+
 end
