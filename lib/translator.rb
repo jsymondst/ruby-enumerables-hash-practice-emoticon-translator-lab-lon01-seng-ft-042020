@@ -23,7 +23,7 @@ end
 
 def get_english_meaning(lib_path, emot)
   # code goes here
-  lib_hash = load_library("lib/emoticons.yml")
+  lib_hash = load_library(lib_path)
   lib_hash.each do |key,values|
     if lib_hash[key].has_value?(emot)
       return key.to_s
