@@ -11,6 +11,7 @@ def load_library(filepath)
       japanese: value[1]
     }
   end
+  puts libHash
   libHash
 end
 
