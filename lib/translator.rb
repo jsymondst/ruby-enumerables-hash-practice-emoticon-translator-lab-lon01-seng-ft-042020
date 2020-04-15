@@ -4,15 +4,15 @@ require "yaml"
 def load_library(lib_path)
   # code goes here
   rawYAML = YAML.load_file(lib_path)
-  libHash = {}
+  resultHash = {}
   rawYAML.each do |key,value|
-    libHash[key.to_sym]={
+    resultHash[key.to_sym]={
       english: value[0],
       japanese: value[1]
     }
   end
   # puts libHash
-  libHash
+  resultHash
 end
 
 # puts load_library("lib/emoticons.yml")
@@ -23,5 +23,6 @@ end
 
 def get_english_meaning(lib_path, emot)
   # code goes here
+  libHash = load_library("lib/emoticons.yml")
 
 end
